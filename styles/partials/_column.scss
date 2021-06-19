@@ -1,0 +1,12 @@
+.column {
+  width: 50%;
+  height: 10%;
+  background-color: slategray;
+  padding: 20px;
+  margin: 10px;
+}
+.column__container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}

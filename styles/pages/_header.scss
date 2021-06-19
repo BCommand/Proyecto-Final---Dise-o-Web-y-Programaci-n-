@@ -1,0 +1,90 @@
+@keyframes "viviremos" {
+  0% {
+    background: mediumvioletred;
+    left: 0;
+    top: 0px;
+  }
+  25% {
+    background: lightskyblue;
+    left: 70px;
+    top: 0px;
+  }
+  50% {
+    background: lightsalmon;
+    left: 40px;
+    top: 40px;
+  }
+  75% {
+    background: violet;
+    left: 0px;
+    top: 40px;
+  }
+  100% {
+    background: yellow;
+    left: 0px;
+    top: 0px;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  background: lightsteelblue;
+  padding: 20px;
+  transition: color 0.5s;
+}
+.vivir-hoy {
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  background: #fff;
+  animation-name: viviremos;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 2;
+  position: relative;
+}
+.header__nav {
+  display: none;
+  justify-items: center;
+  background-color: black;
+  padding: 30px;
+  width: 65%;
+  flex-direction: row;
+  column-gap: 5px;
+  align-items: center;
+  border-radius: 20px;
+}
+.header__nav--li {
+
+  grid-template-rows: auto;
+  list-style-type: none;
+  align-items: center;
+  align-content: center;
+  a {
+    color: #fff;
+    text-decoration: black;
+  }
+}
+
+.border {
+  margin: 100px;
+  border-style: groove;
+  margin-right: 100px;
+}
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  .header__nav {
+    display: flex;
+  }
+}
+.footer {
+  background-color: white;
+  height: 100px;
+  text-align: center;
+  justify-content: stretch;
+  align-items: flex-start;
+}

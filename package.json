@@ -1,0 +1,19 @@
+{
+  "name": "josfoqjf",
+  "version": "1.0.0",
+  "description": "ndjqwnjk",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brisa",
+  "license": "ISC",
+  "keywords": [
+    "hola"
+  ]
+}
