@@ -1,59 +1,105 @@
-@-webkit-keyframes "viviremos" {
-  0% {
-    background: mediumvioletred;
-    left: 0;
-    top: 0px;
-  }
-  25% {
-    background: lightskyblue;
-    left: 70px;
-    top: 0px;
-  }
-  50% {
-    background: lightsalmon;
-    left: 40px;
-    top: 40px;
-  }
-  75% {
-    background: violet;
-    left: 0px;
-    top: 40px;
-  }
-  100% {
-    background: yellow;
-    left: 0px;
-    top: 0px;
-  }
+/*carousel*/
+.img-carousel {
+  width: 400px;
+  height: 600px;
+  border-radius: 100px;
 }
-@keyframes "viviremos" {
-  0% {
-    background: mediumvioletred;
-    left: 0;
-    top: 0px;
-  }
-  25% {
-    background: lightskyblue;
-    left: 70px;
-    top: 0px;
-  }
-  50% {
-    background: lightsalmon;
-    left: 40px;
-    top: 40px;
-  }
-  75% {
-    background: violet;
-    left: 0px;
-    top: 40px;
-  }
-  100% {
-    background: yellow;
-    left: 0px;
-    top: 0px;
-  }
+/*PAQUETES*/
+
+.Container {
+  justify-content: space-between;
+
+  display: grid;
+  grid-gap: 70px;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 70px;
+}
+
+.box1 {
+  padding: 60px;
+  background: #fff;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 1/1;
+}
+
+
+/*HOTELES*/
+.col {
+}
+.card {
+  padding: 20px;
+  margin: 40px;
+}
+/*NAV BAR*/
+.nav-of {
+  font-family: "Titillium Web", sans-serif, Black 900;
+}
+
+.nav-link {
+}
+.navbar-brand {
+  font-family: "Chathura", sans-serif 40px;
+}
+.barcontainer {
+  position: fixed;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 30px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  text-align: center;
+  grid-template-rows: 30px 20px 10px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/*CARDS*/
+
+.cards {
+  font-family: "Roboto", sans-serif;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: space-between;
+  margin: 20px;
+  background-color: beige;
+}
+.card {
+  overflow: hidden;
+}
+.card img {
+  transition: all 1s ease;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+.badge {
+}
+
+.card-text {
+  color: gray;
+}
+.card-body {
+}
+.inner {
+  overflow: hidden;
+}
+.inner img {
+  transition: all 1.5s ease;
+}
+.inner:hover img {
+  transform: scale(1.5);
+}
+
+/*google font*/
+.body {
+  font-family: "Titillium Web", sans-serif;
 }
 
 .header {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,28 +111,9 @@
   align-items: center;
   -ms-flex-line-pack: start;
   align-content: flex-start;
-  background: lightsteelblue;
   padding: 20px;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
-}
-
-.vivir-hoy {
-  border-radius: 10px;
-  margin-right: 10px;
-  width: 170px;
-  height: 50px;
-  text-align: center;
-  background: #fff;
-  -webkit-animation-name: viviremos;
-  animation-name: viviremos;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-iteration-count: 2;
-  animation-iteration-count: 2;
-  position: relative;
 }
 
 .header__nav {
@@ -117,14 +144,15 @@
   -ms-flex-line-pack: center;
   align-content: center;
 }
+
 .header__nav--li a {
-  color: #fff;
+  color: black;
   -webkit-text-decoration: black;
   text-decoration: black;
 }
 
 .border {
-  margin: 100px;
+  margin: 10px;
   border-style: groove;
   margin-right: 100px;
 }
@@ -136,6 +164,17 @@
     display: -ms-flexbox;
     display: flex;
   }
+  /*footer*/
+
+.page-footer {
+  border-radius: 30px;
+  background-color: #202020;
+  color: gray;
+}
+.contfooter {
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 10px;
 }
 
 .grid {
@@ -149,45 +188,6 @@
 }
 
 .todo {
-  border-radius: 30px;
-  align-content: center;
-  background-color: beige;
-  justify-content: center;
-  justify-items: center;
-
-}
-.container {
-  border-radius: 20px;
-  margin: 20px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  grid-template-rows: 1fr 200px 200px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  border-style: groove;
-}
-
-.box1 {
-  border-color: coral;
-  background-color: black;
-  border-radius: 50px;
-  padding: 150px;
-  text-align: center;
-  grid-column: 1/2;
-  grid-row: 1/1;
-}
-
-.box:hover .box-content transform skewY50deg rotateY120deg .box {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 20px;
-  text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .padre-flex {
@@ -214,12 +214,25 @@
   background-color: #fff;
 }
 
+.box {
+  grid-template-rows: 1fr 2fr 3fr;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  height: 30px;
+  width: 30px;
+  background: aquamarine;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
 .column {
   width: 50%;
   height: 10%;
-  background-color: yellow;
-  padding: 20px;
-  margin: 10px;
+  background-color: rgb(0, 0, 0);
+  padding: 50px;
+  margin-top: 50px;
 }
 
 .column__container {
@@ -233,4 +246,7 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-} /*# sourceMappingURL=main.css.map */
+  margin: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */
