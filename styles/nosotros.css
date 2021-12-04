@@ -1,3 +1,11 @@
+.nav-of {
+  font-family: "Titillium Web", sans-serif, Black 900;
+}
+.nav-link {
+}
+.navbar-brand {
+  font-family: "Chathura", sans-serif 40px;
+}
 .body {
   margin-top: 50px;
 }
